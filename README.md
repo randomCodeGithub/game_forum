@@ -15,4 +15,4 @@ design as taken from https://ffs.gg/home.php
 * Dynamic dropdonws for mobile;
 * Customization for Iframe youtube video;
 * Scroll top button;
-* Adding social icons from Typescript; 
+* Adding social icons; 
