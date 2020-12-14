@@ -12,7 +12,7 @@ interface IYoutubeFrame {
 }
 
 const firstFrame: IYoutubeFrame = {
-  videoLink: "https://www.youtube.com/watch?v=lRCbU-IXny4&t=26s",
+  videoLink: "https://www.youtube.com/watch?v=2zY8qnV6S2Y",
   classes: "w-100 position-absolute h-100",
   autoplay: true,
 };
