@@ -1,0 +1,126 @@
+a {
+  text-decoration: none !important;
+}
+
+main {
+  .container-md,
+  .container-fluid {
+    background-color: rgba(255, 255, 255, 0.8);
+    .main- body {
+      padding: 10px 20px 10px 20px;
+    }
+  }
+
+  .authorization {
+    background-color: rgba(80, 80, 255, 0.15);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06),
+      0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.5s;
+
+    a {
+      color: rgba(0, 0, 0, 0.6);
+      transition: all 0.5s;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.7);
+        transition: all 0.5s;
+      }
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    &:hover {
+      box-shadow: none;
+      transition: box-shadow 0.5s;
+    }
+  }
+
+  .news-block {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-right: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+
+    .card-header a {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -1.2px;
+      color: #111111;
+    }
+
+    .card-body {
+      padding: 10px;
+      p {
+        line-height: 20px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.45);
+        margin: 0 !important;
+      }
+    }
+
+    .card-footer {
+      line-height: 32px;
+      font-size: 14px;
+
+      .user-name {
+        color: #000;
+      }
+    }
+  }
+
+  .side-block {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 7px;
+    margin-bottom: 20px;
+
+    h3 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    ol {
+      text-align: center;
+      font-weight: 600;
+
+      li {
+        padding: 10px 0;
+      }
+    }
+
+    b {
+      &:hover {
+        a {
+          color: #ff8900;
+        }
+      }
+
+      a {
+        color: #000;
+      }
+    }
+
+    .card-header {
+      padding: 8px 10px;
+    }
+  }
+
+  .side-block,
+  .news-block {
+    .card-header,
+    .card-footer {
+      background-color: #fff !important;
+    }
+  }
+}

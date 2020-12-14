@@ -1,0 +1,45 @@
+.youtube-video {
+  margin-top: 61.2px;
+  padding-bottom: 56.25% !important;
+  height: 0 !important;
+  background-color: #000;
+
+  .youtube-button {
+    transition: all 0.5s;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    width: 88px;
+    height: 68px;
+
+    path {
+      &:first-child {
+        fill: rgba(0, 0, 0, 0.87);
+        transition: all 0.5s;
+      }
+    }
+
+    &:hover {
+      path {
+        &:first-child {
+          fill: #ff8900;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+
+  .preview {
+    cursor: pointer;
+    &:hover {
+      & ~ .youtube-button {
+        path {
+          &:first-child {
+            fill: #ff8900;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/resources/css/app.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="d-none d-lg-flex justify-content-center align-items-center" style="flex-grow: 1;">
+      <ul id="overlay" class="d-flex p-0 m-0 overlay">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="forum" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Forum</a>
+          <div class="dropdown-menu" aria-labelledby="forum">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Uploader
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FFS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Server</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Premium</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-search"></i>
+          </a>
+        </li>
+
+
+        <span id="close-btn" class="close-btn"></span>
+      </ul>
+      <!-- SOCIAL ICON LiST THAT WILL BE GENERATETED BY JAVASCRIPT -->
+      <ul class="navbar-nav soc-nav position-absolute d-lg-none d-xl-flex"
+        style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.07), 0 6px 20px 0 rgba(0,0,0,0.05); border-radius: 50px;">
+      </ul>
+    </div>
+    <span id="toggle-menu" class="toggler d-lg-none">&#9776;</span>
+    <ul id="mobile-menu" class="mobile-menu fixed-top p-0 mb-0 d-none d-lg-none"
+      style="background: rgba(0,0,0,0.95); width: 100%; margin-top: 61.2px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <li id="back" class="d-none nav-item"><a class="d-block w-100 nav-link" href="#"><i
+            class="fa fa-angle-left fa-fw"></i> Back</a></li>
+
+      <li class="menu-item nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-home fa-fw"></i>
+          Home</a></li>
+      <li class="menu-item nav-item"><a id="forum-item" class="d-block w-100 nav-link" href="javascript:void(0)"><i
+            class="fa fa-list fa-fw"></i> Forum <i class="fa fa-angle-right"></i></a></li>
+      <li class="menu-item nav-item"><a id="uploader-item" class="d-block w-100 nav-link" href="#"><i
+            class="fa fa-server fa-fw"></i>
+          Uploader <i class="fa fa-angle-right"></i></a>
+      </li>
+      <li class="menu-item nav-item"><a id="ffs-item" class="d-block w-100 nav-link" href="#"><i
+            class="fa fa-star fa-fw"></i> FFS <i class="fa fa-angle-right"></i></a></li>
+      <li class="menu-item nav-item"><a id="server-item" class="d-block w-100 nav-link" href="#"><i
+            class="fa fa-gamepad fa-fw"></i> Server <i class="fa fa-angle-right"></i></a>
+      </li>
+      <li class="menu-item nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fas fa-photo-video fa-fw"></i>
+          Gallery</a></li>
+      <li class="menu-item nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fas fa-dollar-sign fa-fw"></i>
+          Premium</a></li>
+
+      <!-- DROPDOWNS -->
+      <div id="forum-item__dropdwown" class="d-none dropdown-object">
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-list fa-fw"></i>
+            Forum</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="far fa-comments fa-fw"></i>
+            New Posts</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-trophy fa-fw"></i>
+            Awards</a>
+        </li>
+      </div>
+
+      <div id="uploader-item__dropdwown" class="d-none dropdown-object">
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fas fa-cloud-upload-alt fa-fw"></i>
+            Uploaded</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fas fa-trash-alt fa-fw"></i>
+            Deleted</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-users fa-fw"></i>
+            Map Testers</a>
+        </li>
+      </div>
+
+      <div id="ffs-item__dropdwown" class="d-none dropdown-object">
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-user fa-fw"></i>
+            Staff Roster</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-trophy fa-fw"></i>
+            Clan Wars</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-calendar fa-fw"></i>
+            Events</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-users fa-fw"></i>
+            Juniors</a>
+        </li>
+      </div>
+
+      <div id="server-item__dropdwown" class="d-none dropdown-object">
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-info-circle fa-fw"></i>
+            Guide & Help</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-users fa-fw"></i>
+            Clans</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-map fa-fw"></i>
+            Maps & Results</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-desktop fa-fw"></i>
+            Monitor</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fas fa-chart-area fa-fw"></i>
+            Statistics</a>
+        </li>
+        <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fas fa-pencil-alt fa-fw"></i>
+            Signatures</a>
+        </li>
+      </div>
+      <!-- ENDDROPDOWNS -->
+
+      <li class="nav-item"><a class="d-block w-100 nav-link" href="#"><i class="fa fa-search fa-fw"></i>
+          Search</a></li>
+
+      <!-- SOCIAL ICON LiST THAT WILL BE GENERATETED BY JAVASCRIPT -->
+      <ul class="d-flex soc-nav justify-content-center"
+        style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.07), 0 6px 20px 0 rgba(0,0,0,0.05); border-radius: 50px;">
+      </ul>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="container-fluid container-md">
+      <div class="row">
+        <div id="video-block" class="w-100 youtube-video position-relative" style="z-index: 2;">
+          <div id="video">
+          </div>
+          <img id="preview" class="w-100 preview" src="https://picsum.photos/1280/720" alt="">
+          <button id="youtube-button" class="youtube-button position-absolute"
+            style="top: 50%; left:50%; transform: translate(-50%, -50%);">
+            <svg class="position-relative" style="z-index: -1;" height="100%" viewBox="0 0 68 48" width="100%">
+              <path class="ytp-large-play-button-bg"
+                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                fill="#f00"></path>
+              <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container-fluid container-md">
+      <div class="main-body">
+        <div class="row">
+          <div class="authorization col-12 d-flex justify-content-between">
+            <p class="mb-0"><i class="fa fa-home"></i> Welcome! <b><a href="#">Register</a></b> to use forums, track
+              your stats, create clans, upload maps and <b><a href="#">much more!</a></b></p>
+            <p class="mb-0"> <a href="">Log In <i class="fas fa-sign-in-alt"></i></a></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8 col-lg-9 px-0 d-flex flex-column">
+            <div class="card news-block">
+              <div class="card-header">
+                <a href="#">Tuning Garage & Premium 3.0</a>
+              </div>
+              <div class="card-body">
+                <p>Tuning Garage Over the years we have been incredibly busy improving the overall game experience for
+                  everyone, causing us to totally lose focus on in-game aesthetics such as tuning. With this update we
+                  are making up for the long wait and are bringing you the largest ever update to cosmetics: it will not
+                  only improve the already existing features, but also bring a vast amount of new ones! Let's get
+                  straight to the new features. Menu Very intuitive option menu, you can find your balance... </p>
+              </div>
+              <div class="card-footer text-muted">
+                By <b><a class="user-name" href="#">-ffs-Gaming</a></b> &bull; Aug 28 &bull; <i class="far fa-eye"></i>
+                <b>29,655</b> &bull; <i class="far fa-comments"></i> ,<b>208</b> &bull; <i class="fas fa-thumbs-up"></i>
+                <b>241</b>
+                <a href="#" class="link-button float-right">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-3 px-0">
+            <div class="card side-block">
+              <div class="card-header">
+                <h3><i class="fas fa-question-circle"></i> How to play</h3>
+              </div>
+              <div class="card-body p-0">
+                <ol class="pl-0 m-0">
+                  <li>Get <b><a href="#">GTA: San Andreas</a></b> on PC</li>
+                  <li>Download & install<b><a href="#"> MTA: SA</a></b> </li>
+                  <li><b><a href="#">Join</a></b> & enjoy our Server</li>
+                </ol>
+              </div>
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="link-button" style="padding: 7px 10px;">Official guide</a>
+              </div>
+            </div>
+            <div class="card side-block">
+              <div class="card-header">
+                <h3><i class="fas fa-server"></i> Our server</h3>
+              </div>
+              <div class="card-body p-0">
+                <ol class="pl-0 m-0">
+                  <li>Get GTA: San Andreas on PC</li>
+                  <li>Download & install MTA: SA</li>
+                  <li>Join & enjoy our Server</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid container-md">
+      <div class="row">
+        <div class="col-6">
+          Copyright © 2010-2020 FFS Gaming. All rights reserved.
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <ul class="navbar-nav p-0 flex-row soc-nav position-absolute d-lg-none d-xl-flex"
+            style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.07), 0 6px 20px 0 rgba(0,0,0,0.05); border-radius: 50px;">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="go-top" class="go-top d-flex justify-content-center align-items-center rounded-circle">
+    <i class="fas fa-angle-up"></i>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+    crossorigin="anonymous"></script>
+  <script src="/assets/youtube-frame-video.js"></script>
+  <script src="/assets/overlay-menu.js"></script>
+  <script src="/assets/social-icons.js"></script>
+  <script src="/assets/scroll-button.js"></script>
+</body>
+
+</html>

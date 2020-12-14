@@ -1,0 +1,130 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 61.2px;
+  border-top: 2px solid #ff8900;
+
+  @media @breakpoint-tablet {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media @md-max {
+    background: rgba(0, 0, 0, 0.95);
+  }
+
+  @media @lg-from-min-to-max {
+    padding-right: 0 !important;
+
+    div {
+      &.d-none {
+        &:nth-child(2) {
+          justify-content: end !important;
+        }
+      }
+    }
+  }
+
+  .soc-nav {
+    a {
+      &:hover {
+        color: #fff !important;
+      }
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.55) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid transparent;
+    transition: all 0.35s ease;
+  }
+
+  .active {
+    a {
+      color: #fff !important;
+      border-color: #ff8900;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .toggler {
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff8900;
+    }
+  }
+
+  .nav-link {
+    line-height: 58px;
+    padding: 0 20px !important;
+
+    &:hover {
+      color: #fff !important;
+      transition: all 0.35s ease;
+      border-color: #ff8900;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-left: -4px !important;
+    }
+  }
+
+  .mobile-menu {
+    .nav-link {
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      line-height: 45px;
+      padding-left: 10px !important;
+
+      &:hover {
+        background-color: #fff;
+        color: #303030 !important;
+      }
+    }
+    .soc-nav {
+      border: 0;
+      height: 45.8px;
+      padding: 0;
+
+      li,
+      a {
+        display: flex;
+      }
+
+      i {
+        font-size: 25px;
+      }
+
+      a {
+        align-items: center;
+      }
+    }
+  }
+}
+
+.soc-nav {
+  padding: 6px 7px 5px 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  right: 0;
+
+  li {
+    padding: 0px 7px;
+  }
+}

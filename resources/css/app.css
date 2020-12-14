@@ -1,0 +1,294 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #666666;
+  background: #85bef3 url(https://ffs.gg/themecrate/ffs/custom/bg.jpg) no-repeat center bottom;
+  background-attachment: scroll;
+  background-size: auto;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 61.2px;
+  border-top: 2px solid #ff8900;
+}
+@media (min-width: 768px) {
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  nav {
+    background: rgba(0, 0, 0, 0.95);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  nav {
+    padding-right: 0 !important;
+  }
+  nav div.d-none:nth-child(2) {
+    justify-content: end !important;
+  }
+}
+nav .soc-nav a:hover {
+  color: #fff !important;
+}
+nav .soc-nav i {
+  font-size: 20px;
+}
+nav a {
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid transparent;
+  transition: all 0.35s ease;
+}
+nav .active a {
+  color: #fff !important;
+  border-color: #ff8900;
+}
+nav ul {
+  list-style: none;
+}
+nav .toggler {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  display: inline-block;
+  cursor: pointer;
+}
+nav .toggler:hover {
+  color: #ff8900;
+}
+nav .nav-link {
+  line-height: 58px;
+  padding: 0 20px !important;
+}
+nav .nav-link:hover {
+  color: #fff !important;
+  transition: all 0.35s ease;
+  border-color: #ff8900;
+}
+nav .navbar-nav .nav-item {
+  margin-left: -4px !important;
+}
+nav .mobile-menu .nav-link {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 45px;
+  padding-left: 10px !important;
+}
+nav .mobile-menu .nav-link:hover {
+  background-color: #fff;
+  color: #303030 !important;
+}
+nav .mobile-menu .soc-nav {
+  border: 0;
+  height: 45.8px;
+  padding: 0;
+}
+nav .mobile-menu .soc-nav li,
+nav .mobile-menu .soc-nav a {
+  display: flex;
+}
+nav .mobile-menu .soc-nav i {
+  font-size: 25px;
+}
+nav .mobile-menu .soc-nav a {
+  align-items: center;
+}
+.soc-nav {
+  padding: 6px 7px 5px 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  right: 0;
+}
+.soc-nav li {
+  padding: 0px 7px;
+}
+.youtube-video {
+  margin-top: 61.2px;
+  padding-bottom: 56.25% !important;
+  height: 0 !important;
+  background-color: #000;
+}
+.youtube-video .youtube-button {
+  transition: all 0.5s;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  width: 88px;
+  height: 68px;
+}
+.youtube-video .youtube-button path:first-child {
+  fill: rgba(0, 0, 0, 0.87);
+  transition: all 0.5s;
+}
+.youtube-video .youtube-button:hover path:first-child {
+  fill: #ff8900;
+  transition: all 0.5s;
+}
+.youtube-video .preview {
+  cursor: pointer;
+}
+.youtube-video .preview:hover ~ .youtube-button path:first-child {
+  fill: #ff8900;
+  transition: all 0.5s;
+}
+a {
+  text-decoration: none !important;
+}
+main .container-md,
+main .container-fluid {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+main .container-md .main- body,
+main .container-fluid .main- body {
+  padding: 10px 20px 10px 20px;
+}
+main .authorization {
+  background-color: rgba(80, 80, 255, 0.15);
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.5s;
+}
+main .authorization a {
+  color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+}
+main .authorization a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+main .authorization p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 600;
+}
+main .authorization:hover {
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+}
+main .news-block {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-right: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+main .news-block .card-header a {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -1.2px;
+  color: #111111;
+}
+main .news-block .card-body {
+  padding: 10px;
+}
+main .news-block .card-body p {
+  line-height: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.45);
+  margin: 0 !important;
+}
+main .news-block .card-footer {
+  line-height: 32px;
+  font-size: 14px;
+}
+main .news-block .card-footer .user-name {
+  color: #000;
+}
+main .side-block {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+main .side-block h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+}
+main .side-block ol {
+  text-align: center;
+  font-weight: 600;
+}
+main .side-block ol li {
+  padding: 10px 0;
+}
+main .side-block b:hover a {
+  color: #ff8900;
+}
+main .side-block b a {
+  color: #000;
+}
+main .side-block .card-header {
+  padding: 8px 10px;
+}
+main .side-block .card-header,
+main .news-block .card-header,
+main .side-block .card-footer,
+main .news-block .card-footer {
+  background-color: #fff !important;
+}
+.link-button {
+  background: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 7px;
+  padding: 0 8px;
+  font-weight: 600;
+}
+.link-button:hover {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+.go-top {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.go-top i {
+  font-size: 20px;
+}
+.go-top:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #606060;
+  transition: all 0.3s ease 0s;
+}
+footer .container-md,
+footer .container-fluid {
+  background: #202020;
+  line-height: 48px;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+footer i {
+  font-size: 20px;
+}
+footer li {
+  display: flex;
+}
+footer li a {
+  display: flex;
+  transition: all 0.35s ease;
+}
+footer li a:hover {
+  color: #fff !important;
+}
